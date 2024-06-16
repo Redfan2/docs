@@ -66,7 +66,7 @@ The Particle Data defines a list of Particle Modules that should be attached to 
 
 ### Particle Modules
 
-A module can do various things when applied to a particle, for example make it have Physics or render a trail behind it. In fact, you have already written modules when you made it this far: The Particle emitter settings and it‘s data are nothing more than mandatory Particle modules
+A module can do various things when applied to a particle, for example make it have Physics or render a trail behind it.
 
 [List of all particle modules](https://github.com/FoundryMC/Veil/tree/1.20/Common/src/main/java/foundry/veil/api/quasar/data/module)
 
