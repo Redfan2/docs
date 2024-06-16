@@ -4,19 +4,20 @@
 
 This document is supposed to give you a quick overview over the various files you need to compose Particles with Veil and Quasar, it‘s Particle system.
 
-**A bit of terminology:**
+## Terminology:
 
-[Veil](https://github.com/foundryMC/veil) is a Minecraft mod developed by [FoundryMC](https://github.com/foundryMC)
+[Veil](https://github.com/foundryMC/veil) is a Minecraft mod developed by [FoundryMC](https://github.com/foundryMC).
 
-Quasar is their Particle system built into the mod.
+Quasar is their Particle system built into the mod
 
-**Codecs:**
+## Codecs:
 
 Quasar uses so-called Codecs to read it‘s particles from Resource Packs. If you are not familiar with what a codec is, read it up [here](https://gist.github.com/Drullkus/1bca3f2d7f048b1fe03be97c28f87910) or [h](https://gist.github.com/Drullkus/1bca3f2d7f048b1fe03be97c28f87910#quick-crash-course-with-codecs)[ere](https://fabric.moddedmc.wiki/misc-topics/codecs).
 
 When you don‘t know what a entry should look like, search it up on Veil‘s Github or, if it is a Minecraft Codec, using [linkie](https://linkie.shedaniel.dev/mappings?namespace=mojang_raw&version=1.20.1&search=&translateMode=none)
 
-All relative paths go off of assets/<mod_id>/quasar/.
+
+## Overview
 
 | File | Relative Path | Function | Required? | Link to Specification |
 | --- | --- | --- | --- | --- |
@@ -29,6 +30,11 @@ All relative paths go off of assets/<mod_id>/quasar/.
 
 For further examples see the [example Resource pack for Particles.](https://github.com/FoundryMC/Veil/tree/1.20/Common/src/main/resources/resourcepacks/test_particles/assets/veil/quasar)
 
+All relative paths go off of `assets/<mod_id>/quasar/`.
+
+For installation instructions see [the Veil wiki](<https://github.com/FoundryMC/Veil/wiki>).
+
+### Particle spawning process
 ```mermaid
 flowchart
 emitter[Particle emitter]
@@ -74,4 +80,4 @@ Additionally to these base modules, there are also [Force](https://github.com/Fo
 
 These modules are ran, depending on the module, while the particle exists or when it is spawned. A rendering module will be ran every frame, whereas init modules will, as the name implies, only run when the Particle is initialized, Update modules when it is ticked
 
-When using them, you create a new instance of this module with the arguments you give it. Please keep in mind each Module can have it‘s own arguments, for example the Trail Module allows you to define the color, width and texture of it.
+When using them, you create a new instance of this module with the arguments you give it. Please keep in mind each Module can have it‘s own, unique parameters, for example the Trail Module allows you to define color, width and texture.
