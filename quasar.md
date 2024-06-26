@@ -19,14 +19,14 @@ When you don‘t know what a entry should look like, search it up on Veil‘s Gi
 
 ## Overview
 
-| File | Relative Path | Function | Required? | Link to Specification |
-| --- | --- | --- | --- | --- |
-| Particle Emitter | emitters | Define  informations for spawning this particle | ✅ | [Github](https://github.com/FoundryMC/Veil/blob/a24b70de8c44775da20b0d51df56b601691f8ce8/Common/src/main/java/foundry/veil/api/quasar/data/ParticleEmitterData.java#L27) |
-| EmitterSettings | Part of Particle Emitter file | Links emission shape and particle settings | ✅ | [Github](https://github.com/FoundryMC/Veil/blob/a24b70de8c44775da20b0d51df56b601691f8ce8/Common/src/main/java/foundry/veil/api/quasar/data/EmitterSettings.java#L11) |
-| Particle Shape | modules/emitter/particle/shape | Defines where relative to the emitter to spawn particles | ❌ | [Github](https://github.com/FoundryMC/Veil/tree/1.20/Common/src/main/java/foundry/veil/api/quasar/emitters/shape) |
-| Particle settings | modules/emitter/particle | Defines a few properties like size and lifetime for each particle | ❌ | [Github](https://github.com/FoundryMC/Veil/blob/a24b70de8c44775da20b0d51df56b601691f8ce8/Common/src/main/java/foundry/veil/api/quasar/data/ParticleSettings.java#L26) |
-| Particle Data | modules/particle_data | Defines the modules for this particle | ✅ | [Github](https://github.com/FoundryMC/Veil/blob/36e50a54ac924ddeae4caf650c767e7c1175f10f/Common/src/main/java/foundry/veil/api/quasar/data/QuasarParticleData.java#L52) |
-| Modules | modules/ | Control the particles behavior while existing | ❌ | [Github](https://github.com/FoundryMC/Veil/tree/36e50a54ac924ddeae4caf650c767e7c1175f10f/Common/src/main/java/foundry/veil/api/quasar/data/module) |
+| File | Relative Path | Function | Link to Specification 
+| --- | --- | --- | --- |
+| Particle Emitter | emitters | Define  informations for spawning this particle | | [Github](https://github.com/FoundryMC/Veil/blob/a24b70de8c44775da20b0d51df56b601691f8ce8/Common/src/main/java/foundry/veil/api/quasar/data/ParticleEmitterData.java#L27) |
+| EmitterSettings | Part of Particle Emitter file | Links emission shape and particle settings | [Github](https://github.com/FoundryMC/Veil/blob/a24b70de8c44775da20b0d51df56b601691f8ce8/Common/src/main/java/foundry/veil/api/quasar/data/EmitterSettings.java#L11) |
+| Particle Shape | modules/emitter/particle/shape | Defines where relative to the emitter to spawn particles | [Github](https://github.com/FoundryMC/Veil/tree/1.20/Common/src/main/java/foundry/veil/api/quasar/emitters/shape) |
+| Particle settings | modules/emitter/particle | Defines a few properties like size and lifetime for each particle | [Github](https://github.com/FoundryMC/Veil/blob/a24b70de8c44775da20b0d51df56b601691f8ce8/Common/src/main/java/foundry/veil/api/quasar/data/ParticleSettings.java#L26) |
+| Particle Data | modules/particle_data | Defines the modules for this particle | [Github](https://github.com/FoundryMC/Veil/blob/36e50a54ac924ddeae4caf650c767e7c1175f10f/Common/src/main/java/foundry/veil/api/quasar/data/QuasarParticleData.java#L52) |
+| Modules | modules/ | Control the particles behavior while existing | [Github](https://github.com/FoundryMC/Veil/tree/36e50a54ac924ddeae4caf650c767e7c1175f10f/Common/src/main/java/foundry/veil/api/quasar/data/module) |
 
 For further examples see the [example Resource pack for Particles.](https://github.com/FoundryMC/Veil/tree/1.20/Common/src/main/resources/resourcepacks/test_particles/assets/veil/quasar)
 
