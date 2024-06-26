@@ -21,7 +21,7 @@ When you don‘t know what a entry should look like, search it up on Veil‘s Gi
 
 | File | Relative Path | Function | Link to Specification 
 | --- | --- | --- | --- |
-| Particle Emitter | emitters | Define  informations for spawning this particle | | [Github](https://github.com/FoundryMC/Veil/blob/a24b70de8c44775da20b0d51df56b601691f8ce8/Common/src/main/java/foundry/veil/api/quasar/data/ParticleEmitterData.java#L27) |
+| Particle Emitter | emitters | Define  informations for spawning this particle | [Github](https://github.com/FoundryMC/Veil/blob/a24b70de8c44775da20b0d51df56b601691f8ce8/Common/src/main/java/foundry/veil/api/quasar/data/ParticleEmitterData.java#L27) |
 | EmitterSettings | Part of Particle Emitter file | Links emission shape and particle settings | [Github](https://github.com/FoundryMC/Veil/blob/a24b70de8c44775da20b0d51df56b601691f8ce8/Common/src/main/java/foundry/veil/api/quasar/data/EmitterSettings.java#L11) |
 | Particle Shape | modules/emitter/particle/shape | Defines where relative to the emitter to spawn particles | [Github](https://github.com/FoundryMC/Veil/tree/1.20/Common/src/main/java/foundry/veil/api/quasar/emitters/shape) |
 | Particle settings | modules/emitter/particle | Defines a few properties like size and lifetime for each particle | [Github](https://github.com/FoundryMC/Veil/blob/a24b70de8c44775da20b0d51df56b601691f8ce8/Common/src/main/java/foundry/veil/api/quasar/data/ParticleSettings.java#L26) |
