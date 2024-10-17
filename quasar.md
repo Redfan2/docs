@@ -12,7 +12,7 @@ Quasar is their Particle system built into the mod
 
 ## Codecs:
 
-Quasar uses so-called Codecs to read it‘s particles from Resource Packs. If you are not familiar with what a codec is, read it up [here](https://gist.github.com/Drullkus/1bca3f2d7f048b1fe03be97c28f87910) or [here](https://fabric.moddedmc.wiki/misc-topics/codecs).
+Quasar uses so-called Codecs to read it‘s particles from Resource Packs. If you are not familiar with what a codec is, read it up [here](https://gist.github.com/Drullkus/1bca3f2d7f048b1fe03be97c28f87910) or [here](https://docs.fabricmc.net/develop/codecs).
 
 When you don‘t know what a entry should look like, search it up on Veil‘s Github or, if it is a Minecraft Codec, using [linkie](https://linkie.shedaniel.dev/mappings?namespace=mojang_raw&version=1.20.1&search=&translateMode=none)
 
@@ -37,18 +37,23 @@ All relative paths go off of `assets/<mod_id>/quasar/`.
 ### Particle spawning process
 ```mermaid
 flowchart
-emitter[Particle emitter]
-data[Particle data
-=>List of Modules]
-modules[Particle Modules
+emitter[Particle Emitter]
+data[Particle Module data
+=> List of Modules]
+pmodules[Particle Modules
 Run every frame/tick]
 particle[Individual Particle]
 shape[Shape]
+modules[Modules]
+moduledata[Module Data
+=> Parameters for the Module]
 settings[Particle Settings
-=>Lifetime and size]
+=> Lifetime and size]
 emitter--spawns using-->shape-->particle
 emitter--supplies-->settings-->particle
-emitter--applies from file-->data-->particle-->modules-->particle
+moduledata-->modules
+emitter--uses-->data--to apply-->modules--to -->particle
+particle-->pmodules-->particle
 
 ```
 
